@@ -1,10 +1,16 @@
 # Aerial Object Classification & Detection 🚁🦅  
 ## Overview  
-A Deep Learning system to differentiate between birds and drones in aerial imagery to enhance airspace safety and wildlife monitoring.  
+A Deep Learning system to differentiate between birds and drones in aerial imagery to enhance airspace safety and wildlife monitoring. 
 Build a deep learning system that:  
 - Classifies aerial images as Bird or Drone  
 - (Optional) Detects and localizes birds/drones using YOLOv8  
-- Deploys the solution using Streamlit  
+- Deploys the solution using Streamlit
+
+**Domain Applications:**  
+- Aerial Surveillance  
+- Wildlife Monitoring  
+- Security & Defense  
+- Airport Safety & Bird-Strike Prevention  
 
 ## Tech Stack  
 - **Deep Learning:** TensorFlow, Keras, YOLOv8
