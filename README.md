@@ -1,18 +1,18 @@
 # Aerial Object Classification & Detection 🚁🦅  
-## Overview  
+📌 **Overview**  
 A Deep Learning system to differentiate between birds and drones in aerial imagery to enhance airspace safety and wildlife monitoring. 
 Build a deep learning system that:  
 - Classifies aerial images as Bird or Drone  
 - (Optional) Detects and localizes birds/drones using YOLOv8  
 - Deploys the solution using Streamlit
 
-**Domain Applications:**  
+🌿**Domain Applications:**  
 - Aerial Surveillance  
 - Wildlife Monitoring  
 - Security & Defense  
 - Airport Safety & Bird-Strike Prevention  
 
-## Tech Stack  
+🛠️ **Tech Stack**  
 - **Deep Learning:** TensorFlow, Keras, YOLOv8
 - **Computer Vision:** OpenCV, PIL
 - **Deployment:** Streamlit
@@ -45,12 +45,13 @@ object_detection_Dataset/
 │   ├── val/     (442 .txt files)  
 │   └── test/    (215 .txt files)  
 
-## Key Features
+.
+🔍 **Key Features**  
 - **Binary Classification:** Custom CNN & MobileNetV2 (95%+ accuracy).
 - **Object Detection:** YOLOv8 implementation for real-time bounding boxes.
 - **Augmentation:** Applied rotation, zoom, and flip to handle diverse sky conditions.
 
-## Results
+🚀 **Results**  
 | Model | Accuracy | Inference Time |
 | :--- | :--- | :--- |
 | Custom CNN | 89% | 45ms |
