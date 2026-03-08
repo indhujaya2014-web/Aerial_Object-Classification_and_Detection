@@ -19,7 +19,7 @@ Build a deep learning system that:
 - **Analysis:** Matplotlib, Seaborn
 
 ## Dataset Understanding  
-📂 Folder Structure (Classification)  
+📂 Folder Structure [Classification](https://drive.google.com/drive/folders/1nn1vqsh8juhafkJcleembrjQ9EqtIoMh?usp=sharing)  
 classification_dataset/  
 │  
 ├── train/  
@@ -32,7 +32,7 @@ classification_dataset/
     ├── bird/  
     └── drone/   
 
-📂 Folder Structure (Object Detection)  
+📂 Folder Structure [Object Detection](https://drive.google.com/drive/folders/114wV_igIhWldcG0HftNIZZsivrs8G22p?usp=sharing)  
 object_detection_Dataset/  
 │  
 ├── images/  
@@ -45,16 +45,24 @@ object_detection_Dataset/
 │   ├── val/     (442 .txt files)  
 │   └── test/    (215 .txt files)  
 
-.
+
 🔍 **Key Features**  
-- **Binary Classification:** Custom CNN & MobileNetV2 (95%+ accuracy).
+- **Binary Classification:** Custom CNN & MobileNet (95%+ accuracy).
 - **Object Detection:** YOLOv8 implementation for real-time bounding boxes.
 - **Augmentation:** Applied rotation, zoom, and flip to handle diverse sky conditions.
 
-🚀 **Results**  
-| Model | Accuracy | Inference Time |
-| :--- | :--- | :--- |
-| Custom CNN | 89% | 45ms |
-| MobileNetV2 | 96% | 20ms |
-| YOLOv8 | 0.91 mAP | 12ms |
+## Streamlit Application Features
 
+The Streamlit app provides an interface where you can:
+
+*   **Select Task**: Choose between "Classification (Keras)" or "Object Detection (YOLOv8)".
+*   **Upload Image**: Upload an aerial image for analysis.
+*   **Classification (Keras)**: The best performing classification model (`best_model.h5`) will predict whether the image contains a "Bird" or a "Drone" and display the confidence score.
+*   **Object Detection (YOLOv8)**: The YOLOv8 model will detect and localize all instances of "Bird" and "Drone" in the uploaded image, displaying bounding boxes and confidence scores.
+
+🚀 **Results**  
+| Model | Accuracy / mAP | Training Time (s) |
+| :--- | :--- | :--- |
+| Custom CNN | 0.8512 Accuracy | 754.94 |
+| Transfer Learning (MobileNet) | 0.9814 Accuracy | 732.22 |
+| YOLOv8 Object Detection | 0.820 mAP50 | 50 Epochs |
